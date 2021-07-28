@@ -1,60 +1,81 @@
-@import url('https://fonts.googleapis.com/css2?family=MonteCarlo&display=swap');
-
-@media (max-width: 960px) {
-  /* For a screen < 960px, this CSS will be read */
-  .container {
-    width: 700px;
-  }
-}
-@media (max-width: 720px) {
-  /* For a screen < 720px, this CSS will be read */
-  .container {
-    width: 500px;
-  }
-}
-@media (max-width: 540px) {
-  /* For a screen < 540px, this CSS will be read */
-  .container {
-    width: 300px;
-  }
-}
-
-h1 {
-  color: rgb(255, 0, 0);
-  font-weight: bold;
-  font-size: 24px;
-}
-
+@import url("http://fonts.googleapis.com/css?family=Open+Sans:400,300,700%7CPoppins:300,400,500,700");
+/*############################MAIN################################*/
 body {
-  background-color:rgb(255, 255, 255);
-  font-family: MonteCarlo;
-  color: rgb(255, 0, 0);
-  font-size: 12px;
-
-}
-
-img {
-  border-radius: 10px;
-  box-shadow: 5px 5px 3px black;
-  height: 240px;
-  width: 180px;
-}
-
-p {
-  line-height: 25px;
+  font-family: 'Open Sans', sans-serif;
+  font-weight: 300;
+  background-color: white;
+  text-align: center;
+  margin: auto;
 }
 a {
   text-decoration: none;
+  color: #606060;
 }
-a:hover {
-  color:rgb(2, 251, 114);
-  text-decoration: underline;
-  font-size: 15px;
+/*############################HEADER################################*/
+header div.card {
+  background-image: url('https://source.unsplash.com/random');
+  padding: 12%;
+  background-attachment: fixed;
+  background-position: center;
+  background-size: cover;
 }
-
-card {
-  background: img src="https://source.unsplash.com/random" ;
-  border: 2px solid green;
-  border-radius: 10px;
-  box-shadow: 0 10px 30px rgba(0,0,0,.1);
+header img {
+  width: 300px;
+  height: 300px;
+  border-radius: 50%;
+  box-shadow: 0 2px 4px rgb(0 0 0 / 30%);
+  border: solid 4px white;
+  transition: all .2s ease-out;
+}
+li {
+  display: inline-block;
+}
+header img:hover {
+  transform: scale(1.05);
+}
+/*############################CONTAINER################################*/
+.description-text {
+  padding: 5%;
+}
+.description-text h3 {
+  color: #606060;
+}
+.description-text p {
+  line-height: 25px;
+  color: #606060;
+  padding-top: 2%;
+}
+/*############################RESPONSIVE################################*/
+@media (max-width: 960px) {
+  /* For a screen < 960px, this CSS will be read */
+  .container {
+    width: 960px;
+    margin: auto;
+  }
+  header img {
+    width: 50%;
+    height: 50%;
+  }
+}
+@media (max-width: 800px) {
+  /* For a screen < 720px, this CSS will be read */
+  .container {
+    width: 800px;
+    margin: auto;
+  }
+  header img {
+    width: 50%;
+    height: 50%;
+  }
+}
+@media (max-width: 640px) {
+  /* For a screen < 540px, this CSS will be read */
+  .container {
+    width: 640px;
+    margin: auto;
+  }
+  header img {
+    width: 50%;
+    height: 50%;
+  }
 }

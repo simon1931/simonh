@@ -30,17 +30,11 @@ body {
   font-family: MonteCarlo;
   color: rgb(255, 0, 0);
   font-size: 12px;
-
-}
-
-header div.card {
   background-image: url <img src="‘https://source.unsplash.com/random">;
-  padding: 12%;
-  background-attachment: fixed;
-  background-position: center;
-  background-size: cover;
 }
-header img {
+
+
+body img {
   width: 300px;
   height: 300px;
   border-radius: 50%;

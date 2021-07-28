@@ -26,6 +26,7 @@ header img {
   box-shadow: 0 2px 4px rgb(0 0 0 / 30%);
   border: solid 4px white;
   transition: all .2s ease-out;
+  object-fit: cover;
 }
 li {
   display: inline-block;

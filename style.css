@@ -33,6 +33,22 @@ body {
 
 }
 
+header div.card {
+  background-image: url <img src="‘https://source.unsplash.com/random">;
+  padding: 12%;
+  background-attachment: fixed;
+  background-position: center;
+  background-size: cover;
+}
+header img {
+  width: 300px;
+  height: 300px;
+  border-radius: 50%;
+  box-shadow: 0 2px 4px rgb(0 0 0 / 30%);
+  border: solid 4px white;
+  transition: all .2s ease-out;
+}
+
 img {
   border-radius: 10px;
   box-shadow: 5px 5px 3px black;
